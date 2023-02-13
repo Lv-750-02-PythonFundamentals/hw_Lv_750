@@ -1,3 +1,3 @@
 print("22")
 print("test test")
-print(1+1)
+print(3)
