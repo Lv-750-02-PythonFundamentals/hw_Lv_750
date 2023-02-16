@@ -2,7 +2,7 @@
 
 a = int(input('a = '))
 b = int(input('b = '))
-a = a + b # 2+8=10
-b = a - b # 10-8=2
-a = a - b # 10-2=8
+a = a + b
+b = a - b
+a = a - b
 print('a =', a, 'b =', b)
