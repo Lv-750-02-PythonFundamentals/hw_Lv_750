@@ -18,6 +18,12 @@ If the implementation is hard to explain, it's a bad idea.\n\
 If the implementation is easy to explain, it may be a good idea.\n\
 Namespaces are one honking great idea -- let's do more of those."
 
+# word_better = "better"
+# word_never = "never"
+# word_is = "is"
+
+# print(f"Better: {phil.count(word_better)}\nNever: {phil.count(word_never)}\nIs: {phil.count(word_is)}")
+
 def word_count(phil):
     word1 = 0
     word2 = 0
