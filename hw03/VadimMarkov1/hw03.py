@@ -53,4 +53,3 @@ if __name__ == "__main__":
     print(change_variables(3, 15))
     print(edit_number(5612))
     print(edit_text(PYTHON_ZEN, "better", "never", "is"))
-
