@@ -18,28 +18,10 @@ If the implementation is hard to explain, it's a bad idea.\n\
 If the implementation is easy to explain, it may be a good idea.\n\
 Namespaces are one honking great idea -- let's do more of those."
 
-# word_better = "better"
-# word_never = "never"
-# word_is = "is"
+word_better = "better"
+word_never = "never"
+word_is = "is"
 
-# print(f"Better: {phil.count(word_better)}\nNever: {phil.count(word_never)}\nIs: {phil.count(word_is)}")
+print(f"Better: {phil.count(word_better)}\nNever: {phil.count(word_never)}\nIs: {phil.count(word_is)}")
 
-def word_count(phil):
-    word1 = 0
-    word2 = 0
-    word3 = 0
-    words = phil.split()
-
-    for word in words:
-        if word == "better":
-            word1 += 1
-        if word == "never":
-            word2 += 1
-        if word == "is":
-            word3 += 1
-    return f"Better: {word1}\nNever: {word2}\nIs: {word3}"
-print(word_count(phil))
-
-print(phil.upper())
-print(phil.replace("i", "&"))
 print(phil.replace("i", "&").upper())
