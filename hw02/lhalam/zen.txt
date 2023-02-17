@@ -1,9 +1,8 @@
+The Zen of Python, by Tim Peters
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
-<<<<<<< HEAD
-=======
 Simple is better than complex.
->>>>>>> 1bd5031 (Revert "Vadim markov1")
 Complex is better than complicated.
 Flat is better than nested.
 Sparse is better than dense.

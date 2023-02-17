@@ -1,9 +1,8 @@
+The Zen of Python, by Tim Peters
+
 Beautiful is better than ugly.
 Explicit is better than implicit.
-<<<<<<< HEAD
-=======
 Simple is better than complex.
->>>>>>> 1bd5031 (Revert "Vadim markov1")
 Complex is better than complicated.
 Flat is better than nested.
 Sparse is better than dense.
@@ -20,3 +19,5 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
+
+"another line for task2"
