@@ -19,24 +19,10 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!"""
 
+word_better = "better"
+word_never = "never"
+word_is = "is"
 
-# split the text into a list of words
-words = text.split()
-
-# initialize counters
-better_count = 0
-never_count = 0
-is_count = 0
-
-# iterate over each word in the list and increment the appropriate counter
-for word in words:
-    if word == "better":
-        better_count += 1
-    elif word == "never":
-        never_count += 1
-    elif word == "is":
-        is_count += 1
-
-print("Number of occurrences of 'better':", better_count)
-print("Number of occurrences of 'never':", never_count)
-print("Number of occurrences of 'is':", is_count)
+print(text.count(word_better))
+print(text.count(word_never))
+print(text.count(word_is))
