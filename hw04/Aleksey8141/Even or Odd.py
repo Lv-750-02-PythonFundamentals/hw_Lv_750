@@ -1,7 +1,7 @@
 '''
 Write a script that will check whether
 the entered number is even or odd and
-display the appropriate message.
+display the appropriate message
 '''
 
 a = int(input())
