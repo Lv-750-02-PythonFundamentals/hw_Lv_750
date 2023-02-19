@@ -1,5 +1,7 @@
+text = """The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
+Simple is better than complex.
 Complex is better than complicated.
 Flat is better than nested.
 Sparse is better than dense.
@@ -15,4 +17,12 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
+Namespaces are one honking great idea -- let's do more of those!"""
+
+word_better = "better"
+word_never = "never"
+word_is = "is"
+
+print(text.count(word_better))
+print(text.count(word_never))
+print(text.count(word_is))

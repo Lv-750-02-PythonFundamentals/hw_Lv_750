@@ -1,5 +1,4 @@
-The Zen of Python, by Tim Peters
-
+python_zen = """The Zen of Python, by Tim Peters
 1.Beautiful is better than ugly.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
@@ -54,7 +53,20 @@ The Zen of Python, by Tim Peters
 52.Now is better than never.
 53.Although never is often better than *right* now.
 54.If the implementation is hard to explain, it's a bad idea.
-55.If the implementation is easy to explain, it may be a good idea.
-56.Namespaces are one honking great idea -- let's do more of those!
+55.If the implementation is easy to explain, it may be a good idea. 
+56.Namespaces are one honking great idea -- let's do more of those!"""
 
-"new line"
+find_keyword_better = python_zen.count("better")
+print(f"The word 'better' appears in the text: {find_keyword_better}")
+
+find_keyword_never = python_zen.count("never")
+print(f"The word 'never' appears in the text: {find_keyword_never}")
+
+find_keyword_is = python_zen.count("is")
+print(f"The word 'is' appears in the text: {find_keyword_is} \n")
+
+edited_python_zen = python_zen.upper()
+print(edited_python_zen + "\n")
+
+edited_i_python_zen = edited_python_zen.replace("I", "&")
+print(edited_i_python_zen)
