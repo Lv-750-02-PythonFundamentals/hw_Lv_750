@@ -1,3 +1,4 @@
+from builtins import print
 
 f = open("Zen.txt", "r")
 zen_text = f.read()
@@ -29,15 +30,20 @@ A four-digit natural number is specified:
 - in ascending order, you need to sort the numbers included in the given number
 """
 digit_number = 1458
-digit_number_str = str(1458)
+digit_number_str = str(1548)
 list_number = list(digit_number_str)
-list_number_reverse = list(digit_number_str).reverse()
+
 product_digits = int(digit_number_str[0]) * int(digit_number_str[1])\
                  *int(digit_number_str[2]) * int(digit_number_str[3])
-list_number.sort()
 print(f"the product of the digits of this number: {product_digits}")
-print(f"reverse: {digit_number_str[3]}{digit_number_str[2]}{digit_number_str[1]}{digit_number_str[0]}")
-print(list_number)
+
+list_number_reverse = list(digit_number_str)
+list_number_reverse.sort()
+list_number_reverse.reverse()
+print(f'reverse: {"".join(list_number_reverse)}')
+
+list_number.sort()
+print(f'sort: {"".join(list_number)}')
 
 """
 Interchange the values of two variables without using the third variable.
