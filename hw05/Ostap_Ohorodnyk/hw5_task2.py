@@ -1,4 +1,4 @@
-number = int(input("enter a number of the length of the list of Fibonacci numbers: "))
+number = int(input("enter a number of the length of the list of Fibonacci numbers:  "))
 n1, n2 = 0, 1
 count = 0
 list_of_fibonacci_numbers = []
