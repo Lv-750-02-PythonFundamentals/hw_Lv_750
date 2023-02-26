@@ -1,6 +1,4 @@
-The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
+philosophy = """Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
 Complex is better than complicated.
@@ -18,6 +16,14 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
+Namespaces are one honking great idea -- let's do more of those!"""
 
-Another appropriate line :) 
+print('Number of occurrence of better:', philosophy.count('better'))
+print('Number of occurrence of never:', philosophy.count('never'))
+print('Number of occurrence of is:', philosophy.count('is'))
+print(philosophy.upper())
+
+symbol_1 = 'i'
+symbol_2 = '&'
+philosophy = philosophy.replace(symbol_1, symbol_2)
+print(philosophy)

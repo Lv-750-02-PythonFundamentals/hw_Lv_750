@@ -1,0 +1,11 @@
+num = int(input("Enter four-digit number: "))
+str_num = str(num)
+list_num = list(str_num)
+int_num1, int_num2, int_num3, int_num4 = int(list_num[0]), int(list_num[1]), int(list_num[2]), int(list_num[3])
+print("I find the product of the digits:", int_num1 + int_num2 + int_num3 + int_num4)
+print("I write the number in revers order:", str_num[::-1])
+list_num.sort()
+str_sort = str(list_num)
+chars = "][,'"
+sort_numbers = str_sort.translate(str.maketrans('', '', chars))
+print("I sorted the numbers:", sort_numbers)
