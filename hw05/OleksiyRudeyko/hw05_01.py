@@ -3,11 +3,10 @@ list_of_ints = []
 
 for x in inputs:
     if x.isdigit() == False:
-        
-        print("Error... You should enter numbers.")
-        break
+        continue
+    list_of_ints.append(float(x))
 
-    else:
-        list_of_ints.append(float(x))
-
+if list_of_ints != []:
     print(list_of_ints)
+else:
+    print("You should enter at least one number!")
