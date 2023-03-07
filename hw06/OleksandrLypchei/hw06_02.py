@@ -1,6 +1,6 @@
 login = ''
 
-while login != 'First':
+while not login == 'First':
     login = input('Enter login: ')
     if login == 'First':
         print('Greetings, Mr. First!')
