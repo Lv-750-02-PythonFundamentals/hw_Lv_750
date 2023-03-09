@@ -23,7 +23,7 @@ def weather_response():
         return '''Oops!!! There was a problem\nretrieving that information.'''
 
 
-def get_weather():
+def get_weather(event=None):
     label['text'] = weather_response()
 
 
@@ -38,10 +38,11 @@ frame.place(relx=0.5, rely=0.1, relwidth=0.75, relheight=0.1, anchor='n')
 
 entry_field = tk.Entry(frame, font=('Courier', 12))
 entry_field.place(relx=0, rely=0, relwidth=0.65, relheight=1)
+entry_field.bind('<Return>', get_weather)
 
 button = tk.Button(frame,
                    text="Get Weather",
-                   bg="gray", fg="white",
+                   bg="gray", fg="black",
                    font=('Courier', 8),
                    command=lambda: get_weather())
 button.place(relx=0.7, rely=0, relwidth=0.3, relheight=1)
