@@ -68,5 +68,3 @@ while run:
         COORD_Y = COORD_Y - HEIGHT_DISPLAY - 0.9 * HEIGHT_RECTANGLE
 
     pygame.display.update()
-    print(COORD_X, COORD_Y)
-    clock.tick(FPS)
