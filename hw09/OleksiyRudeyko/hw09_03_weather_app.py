@@ -17,7 +17,7 @@ def weather_response():
         observation = mgr.weather_at_place(input_city)
         w = observation.weather
 
-        return (f"City: {input_city}\nConditions: {w.detailed_status},\nTemperature is {round(w.temperature('celsius')['temp'], 2)} C\nWind speed is {w.wind()['speed']} km/hours\nHumidity of the air is {w.humidity}")
+        return (f"City: {input_city}\nConditions: {w.detailed_status},\nTemperature is {int(w.temperature('celsius')['temp'])} °C\nWind speed is {w.wind()['speed']} km/hour\nHumidity of the air is {w.humidity}")
 
     except:
         return '''Oops!!! There was a problem\nretrieving that information.'''
@@ -42,9 +42,9 @@ entry_field.bind('<Return>', get_weather)
 
 button = tk.Button(frame,
                    text="Get Weather",
-                   bg="gray", fg="black",
                    font=('Courier', 8),
-                   command=lambda: get_weather())
+                   command=lambda: get_weather()
+                   )
 button.place(relx=0.7, rely=0, relwidth=0.3, relheight=1)
 
 lower_frame = tk.Frame(root, bg='gold', bd=10)
