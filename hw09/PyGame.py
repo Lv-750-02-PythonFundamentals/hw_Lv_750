@@ -36,7 +36,6 @@ print("Привіт! Я задумав число від 1 до 100. У вас �
 
 for attempt in range(1, attempts + 1):
     guess = int(input(f"Спроба #{attempt}: "))
-
     if guess == secret_number:
         print(f"Вітаю! Ви виграли! Загадане число дійсно було {secret_number}!")
         break
