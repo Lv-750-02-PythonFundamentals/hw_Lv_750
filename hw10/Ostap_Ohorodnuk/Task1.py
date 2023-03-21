@@ -18,5 +18,4 @@ class Rectangle(Polygon):
         return self.a * self.b
 
 square_of_rectangle = Rectangle()
-
 print(square_of_rectangle.square())
