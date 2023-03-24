@@ -85,7 +85,7 @@ delete_crossed_button = Button(button_frame, text="Delete crossed", command=dele
 add_button.grid(row=0, column=0, padx=10)
 cross_off_button.grid(row=0, column=1, padx=10)
 uncross_off_button.grid(row=0, column=2, )
-delete_crossed_button.grid(row=0, column=3,padx=10)
+delete_crossed_button.grid(row=0, column=3, padx=10)
 
 
 root.mainloop()
