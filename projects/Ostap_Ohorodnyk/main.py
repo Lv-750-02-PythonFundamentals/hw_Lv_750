@@ -1,3 +1,4 @@
+"""program to do list"""
 from tkinter import *
 from tkinter.font import Font
 
@@ -29,7 +30,7 @@ my_list = Listbox(my_frame,
                   highlightthickness=0,
                   selectbackground="#a6a6a6",
                   activestyle="none")
-my_list.pack(side=LEFT, fill=BOTH, expand=False)
+my_list.pack(side=LEFT, fill=BOTH, )
 # start list
 
 stuff = ["write your tasks"]
