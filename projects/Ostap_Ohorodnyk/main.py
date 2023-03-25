@@ -1,17 +1,18 @@
+"""program to do list"""
 from tkinter import *
 from tkinter.font import Font
 
+
 root = Tk()
 root.title("My ToDO list!")
-bg = "light red"
+bg="light gray"
 root.geometry("570x500")
 root.configure(bg="light gray")
 
 # Define font
 my_font = Font(family="Purisa",
                size=20,
-               weight="bold",
-               )
+               weight="bold",)
 
 # Creat frame
 my_frame = Frame(root)
@@ -28,7 +29,8 @@ my_list = Listbox(my_frame,
                   highlightthickness=0,
                   selectbackground="#a6a6a6",
                   activestyle="none")
-my_list.pack(side=LEFT, fill=BOTH, expand=False)
+
+my_list.pack(side=LEFT, fill=BOTH, )
 # start list
 
 stuff = ["write your tasks"]
@@ -46,6 +48,7 @@ my_scrollbar.config(command=my_list.yview)
 my_entry = Entry(root, font=("Purisa", 20), width=26)
 my_entry.pack(pady=20)
 # buttons
+
 button_frame = Frame(root)
 button_frame.pack(pady=20)
 
