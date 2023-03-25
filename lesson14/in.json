@@ -1,0 +1,9 @@
+{
+  "name": "Liubov",
+  "age": 25,
+  "city": "Lviv",
+  "point": {
+    "x": 12,
+    "y": 22
+  }
+}
