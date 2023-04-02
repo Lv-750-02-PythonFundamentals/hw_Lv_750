@@ -27,7 +27,7 @@ interface_layer = pygame.Surface((WIDTH, 50))
 
 
 pygame.display.set_caption("Paint_IT")
-pygame.display.set_icon(pygame.image.load("hw_Lv_750\projects\VD\paint.png"))
+pygame.display.set_icon(pygame.image.load(".\projects\VD\paint.png"))
 clock = pygame.time.Clock()
 
 
@@ -60,14 +60,17 @@ for l in interface.colors_buttons:
 
 #interface.Interface.draw_interface(interface_layer)
 
+interface.thickness_button_minus.draw(interface_layer)
+interface.thickness_button_plus.draw(interface_layer)
+interface.save_button.draw(interface_layer)
 interface.brush_button.pressed(interface_layer)
 figure = figure_type[fig_id](0, 0, 0, 0, 0, WHITE)
 interface.black_color_button.pressed(interface_layer)
 
-brush = pygame.image.load("hw_Lv_750\projects\VD\images\\brush.png").convert_alpha()
-rect = pygame.image.load("hw_Lv_750\projects\VD\images\\rect.png").convert_alpha()
-line = pygame.image.load("hw_Lv_750\projects\VD\images\\line.png").convert_alpha()
-circle = pygame.image.load("hw_Lv_750\projects\VD\images\\circle.png").convert_alpha()
+brush = pygame.image.load(".\projects\VD\images\\brush.png").convert_alpha()
+rect = pygame.image.load(".\projects\VD\images\\rect.png").convert_alpha()
+line = pygame.image.load(".\projects\VD\images\\line.png").convert_alpha()
+circle = pygame.image.load(".\projects\VD\images\\circle.png").convert_alpha()
 
 main_screen.blit(interface_layer, (0, 0))
 while True:
@@ -130,7 +133,7 @@ while True:
             ### save button
             if WIDTH / 2 - 40 <= mouse_position_1[0] <= WIDTH / 2 + 40 and 5 <= mouse_position_1[1] <= 45:
                 interface.save_button.pressed(interface_layer)
-                pygame.image.save(main_screen, ".\hw_Lv_750\projects\VD\Saves\\temp.jpeg")
+                pygame.image.save(main_screen, ".\projects\VD\Saves\\temp.jpeg")
 
             ### thickness buton
             if 185 <= mouse_position_1[0] <= 225 and 5 <= mouse_position_1[1] <= 45:
@@ -169,10 +172,10 @@ while True:
             interface.thickness_button_plus.draw(interface_layer)
     
     ### interface visualization
-    interface.save_button.draw(interface_layer)
-    interface.thickness_button_minus.draw(interface_layer)
+    # interface.save_button.draw(interface_layer)
+    # interface.thickness_button_minus.draw(interface_layer)
     interface.thickness_button_value.draw(interface_layer)
-    interface.thickness_button_plus.draw(interface_layer)
+    # interface.thickness_button_plus.draw(interface_layer)
     interface.thickness_button_value.draw(interface_layer)
     text_thickness_value = font.render(f"{thickness}", 1, BLACK)
     interface_layer.blit(brush, (8, 9))
